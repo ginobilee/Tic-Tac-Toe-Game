@@ -1,0 +1,70 @@
+﻿<html>
+	<head>	
+		<title>Tic Tac Toe</title>
+		<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>	
+		
+		
+		<link rel = 'stylesheet' href = 'css/style.css'>
+	</head>
+	
+	<body>
+		<div id = 'game'>
+			<div class = 'panel'>
+					<div id = 'firstPage' class = 'page '>
+							<h1>How do you<br> want to play?</h1>
+							<button class = 'btn1 low' id = 'p1'>One Player</button>
+							<button class = 'btn1' id = 'p2'>Two Player</button>
+					</div>
+					
+					<div id = 'singleUser' class = 'page hide'>
+							<h1>Would you like to<br>be X or O?</h1>
+							<button class = 'btn1 low xo x' id = 'sx'>X</button>
+							<button class = 'btn1 xo o' id = 'so'>O</button>
+							<div >
+								<button class = 'btn1 back'>&#8678;Back</button>
+							</div>
+					</div>
+					
+					<div id = 'biUser' class = 'page hide'>
+							<h1>Player 1 : Would <br>you like X or O?</h1>
+							<button class = 'btn1 low xo x' id = 'bx'>X</button>
+							<button class = 'btn1 xo o' id = 'bo'>O</button>
+							<div id = 'test'>
+								<button  class = 'btn1 back'>&#8678;Back</button>
+							</div>
+					</div>
+					
+					<div id = 'chessBoard' class = 'page hide'>
+						<div id = 'k11' class = 'key' value = '0'></div>
+						<div id = 'k12' class = 'key' value = '1'></div>
+						<div id = 'k13' class = 'key' value = '2'></div>
+						<div id = 'k21' class = 'key' value = '3'></div>
+						<div id = 'k22' class = 'key' value = '4'></div>
+						<div id = 'k23' class = 'key' value = '5'></div>
+						<div id = 'k31' class = 'key' value = '6'></div>
+						<div id = 'k32' class = 'key' value = '7'></div>
+						<div id = 'k33' class = 'key' value = '8'></div>
+						<div class = 'hint hint1'><p id = 'p1name'>Your turn!</p></div>
+						<div class = 'hint hint2 hide'><p id = 'p2name'>Computer's turn!</p></div>
+						<div id = 'rezult1'  class = 'score line'>
+							<p id = 'score1'>0</p>
+							<p id = 'name1'>player1</p>
+						</div>
+						<div class = 'line vline'></div>
+						<div id = 'rezult2' class = 'score line'>
+							<p id = 'score2'>0</p>
+							<p id = 'name2'>player2</p>
+						</div>
+						<button id = 'reset' class = 'btn1'>Reset All</button>
+						<div id = 'over' class = 'hide'>
+							<p id = 'roundOver'>Player1 Wins!!:D</p>
+						</div>
+					</div><!-- chessBoard -->		
+				
+				</div>
+				
+		</div><!-- panel -->			
+		</div>    <!--game-->
+	</body>
+</html>
